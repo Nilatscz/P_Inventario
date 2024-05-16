@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="P_Inventario.Views.Vpantalla_Inicio"
+             Title="-_-Nilats_Inventary-_-"
+             BackgroundImageSource="celularfondo.png"   
+             >
+            
+
+    <VerticalStackLayout
+        Spacing="30">
+        <Label 
+        Text="Bienvenido al Sistema Inventario Grupo 5"
+         Grid.Row="0"
+        Grid.Column="1"
+        FontSize="17"
+        TextColor="Blue"
+        BackgroundColor="White"
+        HorizontalOptions="Center"/>
+
+        <Grid
+            RowSpacing="40">
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="2*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+          
+            <Label 
+            Text="ELIJA UN ROL DE USUARIO"
+           Grid.Row="1"
+           Grid.Column="1"
+            FontSize="12"
+            TextColor="White"
+            BackgroundColor="Blue"
+            HorizontalOptions="Center" />
+            
+            <ImageButton Source="icotrabador.png"
+             WidthRequest="100"
+             HeightRequest="100"
+            x:Name="BtnTrabajadores"
+             Grid.Row="2"
+             Grid.Column="0"
+             Clicked="BtnTrabajadores_Clicked">
+                
+             </ImageButton>
+            <ImageButton Source="icoinvitado.png"
+             WidthRequest="100"
+             HeightRequest="100"
+            x:Name="BtnInvitado"
+             Grid.Row="3"
+             Grid.Column="2"
+             Clicked="BtnInvitado_Clicked">
+            </ImageButton>
+            
+            <ImageButton Source="icoadmin.png"
+             WidthRequest="100"
+             HeightRequest="100"
+            x:Name="BtnAdmin"
+             Grid.Row="4"
+             Grid.Column="1"
+             Clicked="BtnAdmin_Clicked">
+            </ImageButton>
+
+        </Grid>
+
+
+    </VerticalStackLayout>
+</ContentPage>

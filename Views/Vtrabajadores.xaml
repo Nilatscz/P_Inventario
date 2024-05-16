@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="P_Inventario.Views.Vtrabajadores"
+             Title="Vtrabajadores"
+             BackgroundImageSource="celularfondo.png" >
+    <VerticalStackLayout
+    Spacing="30">
+        <Label
+        Text="Ingreso al Sistema Usuarios"
+        TextColor="White"
+        BackgroundColor="Blue"
+        FontSize="24"
+        HorizontalTextAlignment="Center"/>
+        <Grid
+                 RowSpacing="25">
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="2*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Text="USUARIO"
+                    TextColor="White"
+                    BackgroundColor="Blue"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"/>
+            <Entry
+                    x:Name="TxtUsuariotra"
+                    TextColor="Blue"
+                    BackgroundColor="White"
+                    Placeholder="INGRESE SU NOMBRE"
+                    Grid.Row="0"
+                    Grid.Column="2"/>
+            <Label Text="CONTRASEÑA"
+                    TextColor="White"
+                    BackgroundColor="Blue"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"/>
+            <Entry
+                    x:Name="TxtContraseñatra"
+                    TextColor="Blue"
+                    BackgroundColor="White"
+                    Placeholder="INGRESE LA CONTRASEÑA"
+                    IsPassword="True"
+                    Grid.Row="1"
+                    Grid.Column="2"/>
+        </Grid>
+        <Button x:Name="BtnLoginTrabajadores"
+                Text="Ingresar"
+                Clicked="BtnLoginTrabajadores_Clicked"/>
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
