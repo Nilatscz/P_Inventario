@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="P_Inventario.Views.VinveTrabajadores"
+             BackgroundImageSource="celularfondo.png"
+              Title="Sistema S.G.R.C">
+    <VerticalStackLayout
+       Spacing="10">
+        <Label 
+   Text="Inventario de productos"
+   TextColor="Red"
+   BackgroundColor="Blue"
+   FontSize="20"
+   HorizontalTextAlignment="Center"/>
+        <Grid
+        RowSpacing="15">
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="2*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Cod."
+           TextColor="White"
+           BackgroundColor="Blue"
+           Grid.Row="0"
+           Grid.Column="0"
+           VerticalTextAlignment="Center"
+           HorizontalTextAlignment="Center"/>
+
+            <Label Text="Nombre"
+           TextColor="White"
+           BackgroundColor="Blue"
+           Grid.Row="0"
+           Grid.Column="1"
+           VerticalTextAlignment="Center"
+           HorizontalTextAlignment="Center"/>
+
+            <Label Text="Cantidad"
+           TextColor="White"
+           BackgroundColor="Blue"
+           Grid.Row="0"
+           Grid.Column="2"
+           VerticalTextAlignment="Center"
+           HorizontalTextAlignment="Center"/>
+
+            <Label Text="Precio"
+           TextColor="White"
+           BackgroundColor="Blue"
+           Grid.Row="0"
+           Grid.Column="3"
+           VerticalTextAlignment="Center"
+           HorizontalTextAlignment="Center"/>
+        </Grid>
+
+        <ListView x:Name="listainventario">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="2*"/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="200"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Label x:Name="LblId_producto" Text="{Binding id}"
+                                   Grid.Row="0"
+                                   Grid.Column="0"
+                                   BackgroundColor="Gray"
+                                   TextColor="Black"
+                                   VerticalTextAlignment="Center"
+                                   HorizontalTextAlignment="Center"/>
+
+                                <Label x:Name="LblNombre_producto" Text="{Binding nombre_producto}"
+                                   Grid.Row="0"
+                                   Grid.Column="1"
+                                   BackgroundColor="Gray"
+                                   TextColor="Black"
+                                   VerticalTextAlignment="Center"
+                                   HorizontalTextAlignment="Center"/>
+
+                                <Label x:Name="LblCantidad_producto" Text="{Binding cantidad}"
+                                   Grid.Row="0"
+                                   Grid.Column="2"
+                                   BackgroundColor="Gray"
+                                   TextColor="Black"
+                                   VerticalTextAlignment="Center"
+                                   HorizontalTextAlignment="Center"/>
+
+                                <Label x:Name="LblPrrecio_producto" Text="{Binding precio}"
+                                   Grid.Row="0"
+                                   Grid.Column="3"
+                                   BackgroundColor="Gray"
+                                   TextColor="Black"
+                                   VerticalTextAlignment="Center"
+                                   HorizontalTextAlignment="Center"/>
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+       
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="P_Inventario.Views.RegistroPro"
+             Title="Registro Producto New"
+             BackgroundImageSource="celularfondo.png">
+    <VerticalStackLayout
+        Spacing="25">
+        <Label 
+            Text="Administrador de Bodega"
+            TextColor="Yellow"
+            BackgroundColor="Blue"
+            HorizontalOptions="Center" />
+        <Label
+         BackgroundColor="Gray"
+         TextColor="White"
+         Text="Codigo"/>
+        <Entry x:Name="txtCodigo"
+       IsReadOnly="True"/>
+        <Label
+          BackgroundColor="Gray"
+          TextColor="White"
+          Text="Nombre del Producto"/>
+        <Entry x:Name="txtnombre_producto"
+        Placeholder="Ingrese_Producto"/>
+        <Label
+          BackgroundColor="Gray"
+          TextColor="White"
+          Text="Cantidad"/>
+        <Entry x:Name="txtacantidad"
+        Placeholder="Ingrese_cantidad"/>
+        <Label
+          BackgroundColor="Gray"
+          TextColor="White"
+          Text="Precio"/>
+        <Entry x:Name="txtprecio"
+        Placeholder="Ingrese_Precio"/>
+        <Grid>
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="2*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btnAgregarPro"
+             BackgroundColor="Gray"
+             TextColor="White"
+             Grid.Row="0"
+             Grid.Column="1"
+             Text="Registrar"
+             Clicked="btnAgregarPro_Clicked"
+             />
+
+        </Grid>
+
+    </VerticalStackLayout>
+</ContentPage>

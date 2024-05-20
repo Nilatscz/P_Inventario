@@ -4,6 +4,12 @@ public partial class Vvisitas : ContentPage
 {
 	public Vvisitas()
 	{
-		InitializeComponent();
+        DisplayAlert("Bienvenido"," S.G.R.C agredece tu visita: ", "continuar");
+        InitializeComponent();
 	}
+
+    private void btnvisita_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new VinveTrabajadores());
+    }
 }

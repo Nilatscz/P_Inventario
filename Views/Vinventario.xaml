@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="P_Inventario.Views.Vinventario"
-             Title="Vinventario"
+             Title="Sistema S.G.R.C"
              BackgroundImageSource="celularfondo.png" >
     <VerticalStackLayout
         Spacing="10">
@@ -61,7 +61,7 @@
             HorizontalTextAlignment="Center"/>
         </Grid>
         
-            <ListView x:Name="listainventario">
+            <ListView x:Name="listainventario" ItemSelected="listainventario_ItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -115,6 +115,10 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
          </ListView>
-        
-       </VerticalStackLayout>
+        <Button x:Name="btnRegistro_newProduct"
+        BackgroundColor="Blue"
+        TextColor="White"
+        Text="Registro nuevo producto"
+        Clicked="btnRegistro_newProduct_Clicked"/>
+    </VerticalStackLayout>
  </ContentPage>

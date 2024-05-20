@@ -6,8 +6,16 @@
              BackgroundImageSource="celularfondo.png" >
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Misión y Visión"
+            FontSize="30"
+            TextColor="ForestGreen"
+            BackgroundColor="Gray"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <Button x:Name="btnvisita"
+                BorderColor="Black"
+                Text="Stock de Invenytario"
+                TextColor="White"
+                Clicked="btnvisita_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>
