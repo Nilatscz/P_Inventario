@@ -12,7 +12,7 @@
         Spacing="30">
 
         <Grid
-            RowSpacing="40">
+            RowSpacing="15">
             <Grid.RowDefinitions>
 
                 <RowDefinition Height="2*"/>
@@ -52,7 +52,7 @@
              HeightRequest="100"
             x:Name="BtnInvitado"
              Grid.Row="3"
-             Grid.Column="2"
+             Grid.Column="0"
              Clicked="BtnInvitado_Clicked">
             </ImageButton>
             
@@ -61,7 +61,7 @@
              HeightRequest="100"
             x:Name="BtnAdmin"
              Grid.Row="4"
-             Grid.Column="1"
+             Grid.Column="0"
              Clicked="BtnAdmin_Clicked">
             </ImageButton>
 
