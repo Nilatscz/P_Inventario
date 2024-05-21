@@ -1,4 +1,5 @@
-﻿namespace P_Inventario
+﻿
+namespace P_Inventario
 {
     public partial class MainPage : ContentPage
     {

@@ -5,6 +5,7 @@
              Title="Registro Producto New"
              BackgroundImageSource="celularfondo.png">
     <VerticalStackLayout
+        Padding="30"
         Spacing="25">
         <Label 
             Text="Administrador de Bodega"
@@ -46,9 +47,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
+                </Grid.ColumnDefinitions>
             <Button x:Name="btnAgregarPro"
              BackgroundColor="Gray"
              TextColor="White"
@@ -57,7 +56,23 @@
              Text="Registrar"
              Clicked="btnAgregarPro_Clicked"
              />
-
+            <Button x:Name="btnCamara"
+            BackgroundColor="Gray"
+            TextColor="White"
+            Grid.Row="0"
+            Grid.Column="2"
+            Text="Cámara"
+            Clicked="btnCamara_Clicked"
+            />
+            <Button x:Name="btnVgaleria"
+            BackgroundColor="Gray"
+            TextColor="White"
+            Grid.Row="0"
+            Grid.Column="3"
+            Text="Vista Galeria"
+            Clicked="btnVgaleria_Clicked"          
+            />
+            <Image x:Name="Imagen"/>
         </Grid>
 
     </VerticalStackLayout>
