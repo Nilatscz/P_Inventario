@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using P_Inventario.Models;
 public partial class VinveTrabajadores : ContentPage
 {
-    private const string url = "http://192.168.1.161/P_inventario/wsinventario.php";
+    private const string url = "http://localhost/P_inventario/wsinventario.php";
     private readonly HttpClient invent = new HttpClient();
     private ObservableCollection<Minventario> est;
     public VinveTrabajadores()

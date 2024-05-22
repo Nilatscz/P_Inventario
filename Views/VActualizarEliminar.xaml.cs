@@ -6,7 +6,7 @@ namespace P_Inventario.Views;
 
 public partial class VActualizarEliminar : ContentPage
 {
-	private const string url = "http://192.168.1.161/P_inventario/wsinventario.php";
+	private const string url = "http://localhost/P_inventario/wsinventario.php";
 	private readonly HttpClient cliente = new HttpClient();
 	private Minventario minventario;
 
