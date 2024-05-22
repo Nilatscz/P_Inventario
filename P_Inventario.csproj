@@ -53,7 +53,10 @@
 	  <None Remove="Resources\Images\celularfondo.png" />
 	  <None Remove="Resources\Images\icoadmin.png" />
 	  <None Remove="Resources\Images\icoinvitado.png" />
+	  <None Remove="Resources\Images\icorol.png" />
 	  <None Remove="Resources\Images\icotrabador.png" />
+	  <None Remove="Resources\Images\mision.png" />
+	  <None Remove="Resources\Images\vision.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -86,6 +89,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Vpantalla_Inicio.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Vregmecanico.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Vtrabajadores.xaml">

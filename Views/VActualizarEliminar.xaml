@@ -9,8 +9,8 @@
         Spacing="25">
         <Label 
             Text="Administrador de Bodega"
-            TextColor="Yellow"
-            BackgroundColor="Blue"
+            TextColor="White"
+            BackgroundColor="Gray"
             HorizontalOptions="Center" />
         <Label
          BackgroundColor="Gray"
@@ -50,14 +50,7 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="btnAgregarPro"
-             BackgroundColor="Gray"
-             TextColor="White"
-             Grid.Row="0"
-             Grid.Column="1"
-             Text="Ingresar"
-             Clicked="btnAgregarPro_Clicked"
-             />
+
             <Button x:Name="btnActualizarPro"
              BackgroundColor="Gray"
              TextColor="White"

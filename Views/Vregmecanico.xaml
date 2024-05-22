@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="P_Inventario.Views.RegistroPro"
-             Title="Registro Producto New"
-             BackgroundImageSource="celularfondo.png">
+             x:Class="P_Inventario.Views.Vregmecanico"
+             BackgroundImageSource="celularfondo.png"
+             Title="Registro Mecánico New">
     <VerticalStackLayout
         Padding="30"
         Spacing="25">
@@ -21,21 +21,21 @@
         <Label
           BackgroundColor="Gray"
           TextColor="White"
-          Text="Nombre del Producto"/>
-        <Entry x:Name="txtnombre_producto"
-        Placeholder="Ingrese_Producto"/>
+          Text="Nombre del Usuario"/>
+        <Entry x:Name="txtnombre_usuario"
+        Placeholder="Nombre/Usuario"/>
         <Label
           BackgroundColor="Gray"
           TextColor="White"
-          Text="Cantidad"/>
-        <Entry x:Name="txtacantidad"
-        Placeholder="Ingrese_cantidad"/>
+          Text="Correo"/>
+        <Entry x:Name="txtaEmail"
+        Placeholder="Email"/>
         <Label
           BackgroundColor="Gray"
           TextColor="White"
-          Text="Precio"/>
-        <Entry x:Name="txtprecio"
-        Placeholder="Ingrese_Precio"/>
+          Text="Contraseña"/>
+        <Entry x:Name="txtcontranewusuario"
+        Placeholder="Ingrese una contraseña"/>
         <Grid>
             <Grid.RowDefinitions>
 
@@ -47,32 +47,16 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-            <Button x:Name="btnAgregarPro"
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btnAgregarUsuanew"
              BackgroundColor="Gray"
              TextColor="White"
              Grid.Row="0"
              Grid.Column="1"
              Text="Registrar"
-             Clicked="btnAgregarPro_Clicked"
+             Clicked="btnAgregarUsuanew_Clicked"
              />
-            <Button x:Name="btnCamara"
-            BackgroundColor="Gray"
-            TextColor="White"
-            Grid.Row="0"
-            Grid.Column="2"
-            Text="Cámara"
-            Clicked="btnCamara_Clicked"
-            />
-            <Button x:Name="btnVgaleria"
-            BackgroundColor="Gray"
-            TextColor="White"
-            Grid.Row="0"
-            Grid.Column="3"
-            Text="Vista Galeria"
-            Clicked="btnVgaleria_Clicked"          
-            />
-            <Image x:Name="Imagen"/>
+
         </Grid>
 
     </VerticalStackLayout>

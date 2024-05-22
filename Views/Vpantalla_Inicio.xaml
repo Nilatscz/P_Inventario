@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="P_Inventario.Views.Vpantalla_Inicio"
              BackgroundColor="Gray"
-             Title="Gestión de Repuesto camiones S.G.R.C."
+             Title="Gestión de Repuesto Camiones S.G.R.C."
              BackgroundImageSource="celularfondo.png"   
              >
             
@@ -28,16 +28,14 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-          
-            <Label 
-            Text="ELIJA SU ROL"
-           Grid.Row="1"
-           Grid.Column="1"
-            FontSize="15"
-            TextColor="Gray"
-            BackgroundColor="White"
-            HorizontalOptions="Center" />
-            
+            <ImageButton Source="icorol.png"
+              WidthRequest="100"
+              HeightRequest="100"           
+             Grid.Row="1"
+             Grid.Column="0">
+                
+            </ImageButton>
+
             <ImageButton Source="icotrabador.png"
              WidthRequest="100"
              HeightRequest="100"

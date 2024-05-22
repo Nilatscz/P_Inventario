@@ -5,17 +5,49 @@
              Title="Vvisitas"
              BackgroundImageSource="celularfondo.png" >
     <VerticalStackLayout>
-        <Label 
-            Text="Misión y Visión"
-            FontSize="30"
-            TextColor="ForestGreen"
-            BackgroundColor="Gray"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Grid>
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="250"/>
+             
+              
+            </Grid.ColumnDefinitions>
+            <Label Text="Misión"
+                   FontSize="30"
+               VerticalOptions="Center"
+               TextColor="White"
+               BackgroundColor="Gray"
+               Grid.Row="0"
+               Grid.Column="0"
+               HorizontalOptions="Center"/>
+            <Image Source="mision.png"
+                 Grid.Row="1"
+                 Grid.Column="0"/>
+            <Label Text="Visión"
+                   FontSize="30"
+               VerticalOptions="Center"
+               TextColor="White"
+               BackgroundColor="Gray"
+               Grid.Row="0"
+               Grid.Column="1"
+               HorizontalOptions="Center"/>
+            <Image Source="vision.png"
+                 Grid.Row="1"
+                 Grid.Column="1"/>
+        
+        </Grid>
+
         <Button x:Name="btnvisita"
-                BorderColor="Black"
-                Text="Stock de Invenytario"
-                TextColor="White"
-                Clicked="btnvisita_Clicked"/>
+         BorderColor="White"
+         Text="Stock de Inventario"
+         TextColor="Gray"
+         Clicked="btnvisita_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>

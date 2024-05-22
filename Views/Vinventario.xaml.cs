@@ -6,7 +6,7 @@ using System.Collections.ObjectModel;
 
 public partial class Vinventario : ContentPage
 {
-    private const string url = "http://192.168.1.161/P_inventario/wsinventario.php";
+    private const string url = "http://192.168.100.9/P_inventario/wsinventario.php";
     private readonly HttpClient invent = new HttpClient();
     private ObservableCollection<Minventario> est;
     
@@ -41,5 +41,10 @@ public partial class Vinventario : ContentPage
         Navigation.PushAsync(new Views.RegistroPro());
       
        
+    }
+
+    private void btnRegnewmecanico_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new Views.Vregmecanico());
     }
 }

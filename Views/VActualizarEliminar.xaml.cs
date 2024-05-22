@@ -6,7 +6,7 @@ namespace P_Inventario.Views;
 
 public partial class VActualizarEliminar : ContentPage
 {
-	private const string url = "http://192.168.1.161/P_inventario/wsinventario.php";
+	private const string url = "http://192.168.100.9/P_inventario/wsinventario.php";
 	private readonly HttpClient cliente = new HttpClient();
 	private Minventario minventario;
 
@@ -19,10 +19,7 @@ public partial class VActualizarEliminar : ContentPage
         txtprecio.Text = bodega.precio.ToString();
     }
 
-    private void btnAgregarPro_Clicked(object sender, EventArgs e)
-    {
-
-    }
+   
 
     private async void btnActualizarPro_Clicked(object sender, EventArgs e)
     {

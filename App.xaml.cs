@@ -12,7 +12,7 @@ namespace P_Inventario
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage (new Views.RegistroPro());
+            MainPage = new NavigationPage (new Views.Vinventario());
         }
     }
 }

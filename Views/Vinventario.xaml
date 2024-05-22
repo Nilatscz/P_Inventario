@@ -8,8 +8,8 @@
         Spacing="10">
         <Label 
     Text="Inventario de productos"
-    TextColor="Red"
-    BackgroundColor="Blue"
+    TextColor="White"
+    BackgroundColor="Gray"
     FontSize="20"
     HorizontalTextAlignment="Center"/>
         <Grid
@@ -120,5 +120,10 @@
         TextColor="White"
         Text="Registro nuevo producto"
         Clicked="btnRegistro_newProduct_Clicked"/>
+        <Button x:Name="btnRegnewmecanico"
+        BackgroundColor="White"
+        TextColor="Gray"
+        Text="Registro nuevo mecánico"
+        Clicked="btnRegnewmecanico_Clicked"/>
     </VerticalStackLayout>
  </ContentPage>
