@@ -29,7 +29,7 @@ public partial class Loginadmi : ContentPage
         {
             using (HttpClient client = new HttpClient()) ;
             {
-                string url = "http://192.168.1.67/P_inventario/wsadmi.php";
+                string url = "http://192.168.1.67/P_inventario/wsloginadmi.php";
                 HttpResponseMessage response = await cliente.GetAsync(url);
                 if (response.IsSuccessStatusCode)
                 {
