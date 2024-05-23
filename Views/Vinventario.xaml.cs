@@ -6,8 +6,9 @@ using System.Collections.ObjectModel;
 
 public partial class Vinventario : ContentPage
 {
-    private const string url = "http://192.168.100.9/P_inventario/wsinventario.php";
+    private const string url = "http://192.168.1.208/P_inventario/wsinventario.php";
     private readonly HttpClient invent = new HttpClient();
+    
     private ObservableCollection<Minventario> est;
     
     
@@ -16,7 +17,7 @@ public partial class Vinventario : ContentPage
 		InitializeComponent();
         DisplayAlert("Bienvenido", "Vista de invetario, para administradores", "Continuar");
         ListaInventario();
-       
+        
     }
     public async void ListaInventario()
     {
@@ -34,11 +35,12 @@ public partial class Vinventario : ContentPage
        Navigation.PushAsync(new VActualizarEliminar(obMinventario));
     }
 
+ 
     private  void btnRegistro_newProduct_Clicked(object sender, EventArgs e)
     {
-       
         
-        Navigation.PushAsync(new Views.RegistroPro());
+
+    Navigation.PushAsync(new Views.RegistroPro());
       
        
     }

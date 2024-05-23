@@ -16,8 +16,13 @@ namespace P_Inventario
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
+
 #if DEBUG
-    		builder.Logging.AddDebug();
+            //permiso de uso camara
+            builder.Services.AddSingleton<IMediaPicker>(MediaPicker.Default);
+            builder.Services.AddTransient<MainPage>();
+            return builder.Build();
+
 #endif
 
             return builder.Build();

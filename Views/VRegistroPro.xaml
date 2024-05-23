@@ -56,23 +56,10 @@
              Text="Registrar"
              Clicked="btnAgregarPro_Clicked"
              />
-            <Button x:Name="btnCamara"
-            BackgroundColor="Gray"
-            TextColor="White"
-            Grid.Row="0"
-            Grid.Column="2"
-            Text="Cámara"
-            Clicked="btnCamara_Clicked"
-            />
-            <Button x:Name="btnVgaleria"
-            BackgroundColor="Gray"
-            TextColor="White"
-            Grid.Row="0"
-            Grid.Column="3"
-            Text="Vista Galeria"
-            Clicked="btnVgaleria_Clicked"          
-            />
-            <Image x:Name="Imagen"/>
+ 
+
+
+
         </Grid>
 
     </VerticalStackLayout>

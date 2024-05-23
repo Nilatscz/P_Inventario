@@ -32,7 +32,8 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		
+		<MauiIcon Include="Resources\Images\ico.png" Color="White" ForegroundScale="0.65" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
@@ -49,9 +50,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Platforms\Android\Resources\xml\file_paths.xml" />
+	  <MauiImage Remove="Resources\Images\ico.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\Images\celularfondo.png" />
+	  <None Remove="Resources\Images\ico.png" />
 	  <None Remove="Resources\Images\icoadmin.png" />
+	  <None Remove="Resources\Images\icocamara.png" />
 	  <None Remove="Resources\Images\icoinvitado.png" />
 	  <None Remove="Resources\Images\icorol.png" />
 	  <None Remove="Resources\Images\icotrabador.png" />

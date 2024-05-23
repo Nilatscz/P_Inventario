@@ -21,6 +21,7 @@
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
+                <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="150"/>
@@ -60,8 +61,17 @@
             x:Name="BtnAdmin"
              Grid.Row="4"
              Grid.Column="0"
-             Clicked="BtnAdmin_Clicked">
+             Clicked="BtnAdmin_Clicked"> 
             </ImageButton>
+            <ImageButton Source="icocamara.png"
+             WidthRequest="100"
+             HeightRequest="100"
+            x:Name="btncamara"
+             Grid.Row="5"
+             Grid.Column="0"
+             Clicked="btncamara_Clicked">
+            </ImageButton>
+            <Image x:Name="SelectedImage" />
 
         </Grid>
 

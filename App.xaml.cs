@@ -7,12 +7,15 @@ namespace P_Inventario
     
     public partial class App : Application
     {
-        
-        public App()
+        private readonly IMediaPicker mediaPicker;
+
+        public App(IMediaPicker mediaPicker)
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage (new Views.Vinventario());
+           
+            this.mediaPicker = mediaPicker;
+            MainPage = new NavigationPage(new Views.Vpantalla_Inicio(mediaPicker));
         }
     }
 }
