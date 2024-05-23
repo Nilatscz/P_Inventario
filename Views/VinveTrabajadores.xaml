@@ -10,23 +10,19 @@
         <Label 
    Text="Inventario de productos"
    TextColor="White"
-   BackgroundColor="Gray"
-   FontSize="20"
+   FontSize="24"
    HorizontalTextAlignment="Center"/>
         <Grid
-        RowSpacing="15">
+        RowSpacing="0">
             <Grid.RowDefinitions>
-
-                <RowDefinition Height="2*"/>
+                <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200"/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
-
             </Grid.ColumnDefinitions>
 
             <Label Text="Cod."
@@ -69,11 +65,10 @@
                         <StackLayout>
                             <Grid>
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="2*"/>
+                                    <RowDefinition/>
                                     <RowDefinition/>
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="200"/>
                                     <ColumnDefinition/>
                                     <ColumnDefinition/>
                                     <ColumnDefinition/>

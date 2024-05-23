@@ -9,7 +9,7 @@ namespace P_Inventario.Views;
 
 public partial class Vtrabajadores : ContentPage
 {
-    private const string url = "http://192.168.100.9/P_inventario/wsusuarios.php";
+    private const string url = "http://192.168.1.67/P_inventario/wsusuarios.php";
     private readonly HttpClient cliente = new HttpClient();
     private ObservableCollection<Mtrabajadores> est;
     public Vtrabajadores()
@@ -24,7 +24,7 @@ public partial class Vtrabajadores : ContentPage
         {
             using (HttpClient client = new HttpClient());
             {
-                string url = "http://192.168.100.9/P_inventario/wsusuarios.php";
+                string url = "http://192.168.1.67/P_inventario/wsusuarios.php";
                 HttpResponseMessage response = await cliente.GetAsync(url);
                 if (response.IsSuccessStatusCode)
                 {

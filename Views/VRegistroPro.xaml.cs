@@ -41,7 +41,7 @@ public partial class RegistroPro : ContentPage
                 parametros.Add("nombre_producto", txtnombre_producto.Text);
                 parametros.Add("cantidad", txtacantidad.Text);
                 parametros.Add("precio", txtprecio.Text);
-                cliente.UploadValues("http://192.168.100.9/P_inventario/wsinventario.php", "POST", parametros);
+                cliente.UploadValues("http://192.168.1.67/P_inventario/wsinventario.php", "POST", parametros);
                 DisplayAlert("Positivo", "producto registrado. ", "continuar a vista inventario");
 
                 Navigation.PushAsync(new Views.Vinventario());

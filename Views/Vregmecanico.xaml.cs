@@ -24,7 +24,7 @@ public partial class Vregmecanico : ContentPage
                 parametros.Add("nombre", txtnombre_usuario.Text);
                 parametros.Add("email", txtaEmail.Text);
                 parametros.Add("password", txtcontranewusuario.Text);
-                cliente.UploadValues("http://192.168.100.9/P_inventario/wsusuarios.php", "POST", parametros);
+                cliente.UploadValues("http://192.168.1.67/P_inventario/wsusuarios.php", "POST", parametros);
                 DisplayAlert("Positivo", "Usuario Restro. ", "realice prueba de ingreso");
 
                 Navigation.PushAsync(new Views.Vtrabajadores());
