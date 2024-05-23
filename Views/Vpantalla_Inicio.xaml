@@ -22,6 +22,7 @@
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
+                <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="150"/>
@@ -72,9 +73,24 @@
              Clicked="btncamara_Clicked">
             </ImageButton>
             <Image x:Name="SelectedImage" />
+            <StackLayout x:Name="Layout"
+                Grid.Row="5"
+                Grid.Column="1"
+               Padding="10"
+               Spacing="10"
+               Orientation="Vertical">
+                <ImageButton Source="icogaleria.png"
+                  Grid.Row="1"
+                    Grid.Column="2"
+                 WidthRequest="100"
+                 HeightRequest="100"
+                x:Name="btngaleria"
+                Clicked="btngaleria_Clicked_1">    
+                </ImageButton>
+            </StackLayout>
 
         </Grid>
-
+   
 
     </VerticalStackLayout>
 </ContentPage>

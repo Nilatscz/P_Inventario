@@ -43,4 +43,41 @@ public partial class Vpantalla_Inicio : ContentPage
             }
         }
     }
+
+    private async void btngaleria_Clicked_1(object sender, EventArgs e)
+    {
+        try
+        {
+            var result = await mediaPicker.PickPhotoAsync(new MediaPickerOptions
+            {
+                Title = "Please select a photo"
+            });
+
+            if (result != null)
+            {
+                var stream = await result.OpenReadAsync();
+                // Aquí puedes hacer lo que necesites con el stream de la imagen
+                // Por ejemplo, mostrarla en un Image control
+                var image = new Image
+                {
+                    Source = ImageSource.FromStream(() => stream)
+                };
+                // Asumiendo que tienes un StackLayout en tu XAML llamado `Layout`
+                Layout.Children.Add(image);
+            }
+        }
+        catch (FeatureNotSupportedException fnsEx)
+        {
+            // Feature not supported on device
+        }
+        catch (PermissionException pEx)
+        {
+            // Permissions not granted
+        }
+        catch (Exception ex)
+        {
+            // Something went wrong
+        }
+    
+}
 }

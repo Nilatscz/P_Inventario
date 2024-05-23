@@ -5,6 +5,7 @@
              Title="Sistema S.G.R.C"
              BackgroundImageSource="celularfondo.png" >
     <VerticalStackLayout
+        Padding="30"
         Spacing="30">
            <Label
             Text="Ingreso al Sistema para Bodeguero"
@@ -17,20 +18,20 @@
                         <Grid.RowDefinitions>
 
                             <RowDefinition Height="2*"/>
-                            <RowDefinition/>
+                            <RowDefinition Height="2*"/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="200"/>
                             <ColumnDefinition/>
-                            <ColumnDefinition/>
-                            <ColumnDefinition/>
+                            
                         </Grid.ColumnDefinitions>
                         <Label Text="USUARIO"
                         TextColor="White"
                         BackgroundColor="Gray"
                         Grid.Row="0"
-                        Grid.Column="1"
+                        Grid.Column="0"
                         VerticalTextAlignment="Center"
                         HorizontalTextAlignment="Center"/>
                                     <Entry
@@ -39,12 +40,12 @@
                         BackgroundColor="White"
                         Placeholder="INGRESE SU NOMBRE"
                         Grid.Row="0"
-                        Grid.Column="2"/>
+                        Grid.Column="1"/>
                                     <Label Text="CONTRASEÑA"
                         TextColor="White"
                         BackgroundColor="Gray"
                         Grid.Row="1"
-                        Grid.Column="1"
+                        Grid.Column="0"
                         VerticalTextAlignment="Center"
                         HorizontalTextAlignment="Center"/>
                                     <Entry
@@ -54,7 +55,7 @@
                         Placeholder="INGRESE LA CONTRASEÑA"
                         IsPassword="True"
                         Grid.Row="1"
-                        Grid.Column="2"/>
+                        Grid.Column="1"/>
                     </Grid>
 
         <Button

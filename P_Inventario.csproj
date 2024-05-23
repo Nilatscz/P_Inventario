@@ -58,6 +58,7 @@
 	  <None Remove="Resources\Images\ico.png" />
 	  <None Remove="Resources\Images\icoadmin.png" />
 	  <None Remove="Resources\Images\icocamara.png" />
+	  <None Remove="Resources\Images\icogaleria.png" />
 	  <None Remove="Resources\Images\icoinvitado.png" />
 	  <None Remove="Resources\Images\icorol.png" />
 	  <None Remove="Resources\Images\icotrabador.png" />
