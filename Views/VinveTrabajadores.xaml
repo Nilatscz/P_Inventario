@@ -5,7 +5,8 @@
              BackgroundImageSource="celularfondo.png"
               Title="Sistema S.G.R.C">
     <VerticalStackLayout
-       Spacing="10">
+       Spacing="10"
+        Padding="30">
         <Label 
    Text="Inventario de productos"
    TextColor="White"
@@ -115,6 +116,10 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-       
+        <Label x:Name="lbltraconectado"
+               BackgroundColor="White"
+                HorizontalTextAlignment="Center"
+               TextColor="Blue"/>
+
     </VerticalStackLayout>
 </ContentPage>

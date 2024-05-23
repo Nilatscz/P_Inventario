@@ -17,6 +17,8 @@
          TextColor="White"
          Text="Codigo"/>
         <Entry x:Name="txtCodigo"
+        TextColor="Black"
+        Placeholder="Automatico"
        IsReadOnly="True"/>
         <Label
           BackgroundColor="Gray"
@@ -35,7 +37,8 @@
           TextColor="White"
           Text="Contraseña"/>
         <Entry x:Name="txtcontranewusuario"
-        Placeholder="Ingrese una contraseña"/>
+        Placeholder="Ingrese una contraseña"
+        IsPassword="True"/>
         <Grid>
             <Grid.RowDefinitions>
 

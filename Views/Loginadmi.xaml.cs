@@ -10,7 +10,7 @@ namespace P_Inventario.Views;
 
 public partial class Loginadmi : ContentPage
 {
-    private const string url = "http://192.168.1.208/P_inventario/wsloginadmi.php";
+    private const string url = "http://192.168.100.9/P_inventario/wsloginadmi.php";
     private readonly HttpClient cliente = new HttpClient();
     private readonly IMediaPicker mediaPicker;
     private ObservableCollection<ListUsuarios> est;
@@ -29,7 +29,7 @@ public partial class Loginadmi : ContentPage
         {
             using (HttpClient client = new HttpClient()) ;
             {
-                string url = "http://192.168.1.208/P_inventario/wsadmi.php";
+                string url = "http://192.168.100.9/P_inventario/wsadmi.php";
                 HttpResponseMessage response = await cliente.GetAsync(url);
                 if (response.IsSuccessStatusCode)
                 {

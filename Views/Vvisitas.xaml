@@ -4,10 +4,15 @@
              x:Class="P_Inventario.Views.Vvisitas"
              Title="Bienvenidos"
              BackgroundImageSource="celularfondo.png" >
-    <VerticalStackLayout>
-        <Grid>
+    <VerticalStackLayout
+        Padding="30">
+        <Grid
+         RowSpacing="10">
             <Grid.RowDefinitions>
 
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
                 <RowDefinition Height="2*"/>
                 <RowDefinition Height="2*"/>
                 <RowDefinition Height="2*"/>
@@ -43,13 +48,28 @@
             <Image Source="vision.png"
                  Grid.Row="3"
                  Grid.Column="1"/>
-        
+            <Label Text="Créditos"
+                   FontSize="30"
+               VerticalOptions="Center"
+               TextColor="White"
+              
+               Grid.Row="4"
+               Grid.Column="1"
+               HorizontalOptions="Center"/>
+            <Image Source="usuariocrea.png"
+                 Grid.Row="5"
+                 Grid.Column="1"/>
+            <Button x:Name="btnvisita"
+         Grid.Row="6"
+        Grid.Column="1"
+        BorderColor="White"
+        Text="Stock de Inventario"
+        TextColor="White"
+        Background="Black"
+        Clicked="btnvisita_Clicked"/>
+
         </Grid>
 
-        <Button x:Name="btnvisita"
-         BorderColor="White"
-         Text="Stock de Inventario"
-         TextColor="Gray"
-         Clicked="btnvisita_Clicked"/>
+ 
     </VerticalStackLayout>
 </ContentPage>

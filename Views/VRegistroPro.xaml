@@ -57,9 +57,6 @@
              Clicked="btnAgregarPro_Clicked"
              />
  
-
-
-
         </Grid>
 
     </VerticalStackLayout>

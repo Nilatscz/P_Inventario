@@ -28,29 +28,30 @@ public partial class RegistroPro : ContentPage
 
     private void btnAgregarPro_Clicked(object sender, EventArgs e)
     {
-        try
+        if (((string.IsNullOrEmpty(txtnombre_producto.Text)) || (string.IsNullOrEmpty(txtacantidad.Text))) || (string.IsNullOrEmpty(txtprecio.Text)))
         {
-            WebClient cliente = new WebClient();
-            var parametros = new System.Collections.Specialized.NameValueCollection();
-            parametros.Add("nombre_producto", txtnombre_producto.Text);
-            parametros.Add("cantidad", txtacantidad.Text);
-            parametros.Add("precio", txtprecio.Text);
-            cliente.UploadValues("http://192.168.1.208/P_inventario/wsinventario.php", "POST", parametros);
-            DisplayAlert("Positivo", "producto registrado. ", "continuar a vista inventario");
-
-            Navigation.PushAsync(new Views.Vinventario());
+            DisplayAlert("Atencion", "Llene los campos solicitados: ", "continuar");
         }
-        catch (Exception ex)
+        else
         {
+            try
+            {
+                WebClient cliente = new WebClient();
+                var parametros = new System.Collections.Specialized.NameValueCollection();
+                parametros.Add("nombre_producto", txtnombre_producto.Text);
+                parametros.Add("cantidad", txtacantidad.Text);
+                parametros.Add("precio", txtprecio.Text);
+                cliente.UploadValues("http://192.168.100.9/P_inventario/wsinventario.php", "POST", parametros);
+                DisplayAlert("Positivo", "producto registrado. ", "continuar a vista inventario");
 
-            DisplayAlert("Alerta", ex.Message, "cerrar");
+                Navigation.PushAsync(new Views.Vinventario());
+            }
+            catch (Exception ex)
+            {
+
+                DisplayAlert("Alerta", ex.Message, "cerrar");
+            }
         }
     }
-
    
-
-    private void btnVergaleria_Clicked(object sender, EventArgs e)
-    {
-
-    }
 }

@@ -4,14 +4,15 @@ using System.Collections.ObjectModel;
 using P_Inventario.Models;
 public partial class VinveTrabajadores : ContentPage
 {
-    private const string url = "http://192.168.1.208/P_inventario/wsinventario.php";
+    private const string url = "http://192.168.100.9/P_inventario/wsinventario.php";
     private readonly HttpClient invent = new HttpClient();
     private ObservableCollection<Minventario> est;
-    public VinveTrabajadores()
+    public VinveTrabajadores(string usu)
 	{
 		InitializeComponent();
         DisplayAlert("Bienvenido", "Stock de Invantaro", "Continuar");
         ListaInventario();
+        lbltraconectado.Text = "Usuario conectado: "+usu;
 
     }
     public async void ListaInventario()
@@ -22,9 +23,5 @@ public partial class VinveTrabajadores : ContentPage
         listainventario.ItemsSource = est;
 
     }
-    private void listainventario_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-    {
-        var obMinventario = (Minventario)e.SelectedItem;
-        Navigation.PushAsync(new VActualizarEliminar(obMinventario));
-    }
+   
 }

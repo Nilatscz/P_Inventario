@@ -5,6 +5,7 @@
              Title="Sistema S.G.R.C"
              BackgroundImageSource="celularfondo.png" >
     <VerticalStackLayout
+        Padding="30"
         Spacing="10">
         <Label 
     Text="Inventario de productos"

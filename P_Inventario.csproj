@@ -63,6 +63,7 @@
 	  <None Remove="Resources\Images\icorol.png" />
 	  <None Remove="Resources\Images\icotrabador.png" />
 	  <None Remove="Resources\Images\mision.png" />
+	  <None Remove="Resources\Images\usuariocrea.png" />
 	  <None Remove="Resources\Images\vision.png" />
 	</ItemGroup>
 

@@ -10,6 +10,7 @@ public partial class Vvisitas : ContentPage
 
     private void btnvisita_Clicked(object sender, EventArgs e)
     {
-        Navigation.PushAsync(new VinveTrabajadores());
+        string usu = "Visita";
+        Navigation.PushAsync(new VinveTrabajadores(usu));
     }
 }
