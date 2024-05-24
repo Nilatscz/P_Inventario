@@ -10,54 +10,41 @@
         <Label 
     Text="Inventario de productos"
     TextColor="White"
-    BackgroundColor="Gray"
-    FontSize="20"
+    FontSize="24"
     HorizontalTextAlignment="Center"/>
         <Grid
          RowSpacing="15">
             <Grid.RowDefinitions>
-
-                <RowDefinition Height="2*"/>
+                <RowDefinition/>
                 <RowDefinition/>
                 </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200"/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
-                <ColumnDefinition/>
-                
             </Grid.ColumnDefinitions>
         
-        <Label Text="Cod."
+        <Label Text="Nombre"
             TextColor="White"
-            BackgroundColor="Blue"
+            BackgroundColor="Black"
             Grid.Row="0"
             Grid.Column="0"
             VerticalTextAlignment="Center"
             HorizontalTextAlignment="Center"/>
 
-        <Label Text="Nombre"
+        <Label Text="Cantidad"
             TextColor="White"
-            BackgroundColor="Blue"
+            BackgroundColor="Black"
             Grid.Row="0"
             Grid.Column="1"
             VerticalTextAlignment="Center"
             HorizontalTextAlignment="Center"/>
 
-        <Label Text="Cantidad"
-            TextColor="White"
-            BackgroundColor="Blue"
-            Grid.Row="0"
-            Grid.Column="2"
-            VerticalTextAlignment="Center"
-            HorizontalTextAlignment="Center"/>
-
         <Label Text="Precio"
             TextColor="White"
-            BackgroundColor="Blue"
+            BackgroundColor="Black"
             Grid.Row="0"
-            Grid.Column="3"
+            Grid.Column="2"
             VerticalTextAlignment="Center"
             HorizontalTextAlignment="Center"/>
         </Grid>
@@ -69,45 +56,33 @@
                         <StackLayout>
                             <Grid>
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="2*"/>
+                                    <RowDefinition/>
                                     <RowDefinition/>
                                     </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="200"/>
-                                    <ColumnDefinition/>
                                     <ColumnDefinition/>
                                     <ColumnDefinition/>
                                     <ColumnDefinition/>
                                 </Grid.ColumnDefinitions>
-                                <Label x:Name="LblId_producto" Text="{Binding id}"
-                                    Grid.Row="0"
-                                    Grid.Column="0"
-                                    BackgroundColor="Gray"
-                                    TextColor="Black"
-                                    VerticalTextAlignment="Center"
-                                    HorizontalTextAlignment="Center"/>
-
+                                
                                 <Label x:Name="LblNombre_producto" Text="{Binding nombre_producto}"
                                     Grid.Row="0"
-                                    Grid.Column="1"
-                                    BackgroundColor="Gray"
-                                    TextColor="Black"
+                                    Grid.Column="0"
+                                    TextColor="White"
                                     VerticalTextAlignment="Center"
                                     HorizontalTextAlignment="Center"/>
 
                                 <Label x:Name="LblCantidad_producto" Text="{Binding cantidad}"
                                     Grid.Row="0"
-                                    Grid.Column="2"
-                                    BackgroundColor="Gray"
-                                    TextColor="Black"
+                                    Grid.Column="1"
+                                    TextColor="White"
                                     VerticalTextAlignment="Center"
                                     HorizontalTextAlignment="Center"/>
 
                                 <Label x:Name="LblPrrecio_producto" Text="{Binding precio}"
                                     Grid.Row="0"
-                                    Grid.Column="3"
-                                    BackgroundColor="Gray"
-                                    TextColor="Black"
+                                    Grid.Column="2"
+                                    TextColor="White"
                                     VerticalTextAlignment="Center"
                                     HorizontalTextAlignment="Center"/>
                             </Grid>
@@ -122,8 +97,8 @@
         Text="Registro nuevo producto"
         Clicked="btnRegistro_newProduct_Clicked"/>
         <Button x:Name="btnRegnewmecanico"
-        BackgroundColor="White"
-        TextColor="Gray"
+        BackgroundColor="Green"
+        TextColor="White"
         Text="Registro nuevo mecánico"
         Clicked="btnRegnewmecanico_Clicked"/>
     </VerticalStackLayout>

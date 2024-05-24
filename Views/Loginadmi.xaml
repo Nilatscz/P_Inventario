@@ -16,7 +16,6 @@
                     <Grid
                      RowSpacing="25">
                         <Grid.RowDefinitions>
-
                             <RowDefinition Height="2*"/>
                             <RowDefinition Height="2*"/>
                             <RowDefinition/>

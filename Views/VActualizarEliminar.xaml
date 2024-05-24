@@ -6,64 +6,68 @@
              BackgroundImageSource="celularfondo.png">
     <VerticalStackLayout
         Padding="30"
-        Spacing="25">
+        Spacing="10">
         <Label 
             Text="Administrador de Bodega"
             TextColor="White"
-            BackgroundColor="Gray"
             HorizontalOptions="Center" />
+        
+        <Entry
+            x:Name="txtCodigo"
+            IsReadOnly="True"
+            TextColor="White"
+            HorizontalOptions="Center"/>
+        
         <Label
-         BackgroundColor="Gray"
-         TextColor="White"
-         Text="Codigo"/>
-        <Entry x:Name="txtCodigo"
-       IsReadOnly="True"/>
+            BackgroundColor="Black"
+            TextColor="White"
+            Text="Nombre del Producto:"/>   
+        <Entry 
+            x:Name="txtnombre_producto"
+            Placeholder="Ingrese_Producto"
+            TextColor="White"/>
+        
         <Label
-          BackgroundColor="Gray"
-          TextColor="White"
-          Text="Nombre del Producto"/>   
-        <Entry x:Name="txtnombre_producto"
-        Placeholder="Ingrese_Producto"/>
+            BackgroundColor="Black"
+            TextColor="White"
+            Text="Cantidad:"/>    
+        <Entry 
+            x:Name="txtacantidad"
+            Placeholder="Ingrese_cantidad"
+            TextColor="White"/>
+        
         <Label
-          BackgroundColor="Gray"
-          TextColor="White"
-          Text="Cantidad"/>       
-        <Entry x:Name="txtacantidad"
-        Placeholder="Ingrese_cantidad"/>
-        <Label
-          BackgroundColor="Gray"
-          TextColor="White"
-          Text="Precio"/>
-        <Entry x:Name="txtprecio"
-        Placeholder="Ingrese_Precio"/>
+              BackgroundColor="Black"
+              TextColor="White"
+              Text="Precio:"/>
+        <Entry 
+            x:Name="txtprecio"
+            Placeholder="Ingrese_Precio"
+            TextColor="White"/>
+        
         <Grid>
             <Grid.RowDefinitions>
-
-                <RowDefinition Height="2*"/>
+                <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="50"/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
             <Button x:Name="btnActualizarPro"
-             BackgroundColor="Gray"
+             BackgroundColor="Green"
              TextColor="White"
              Grid.Row="0"
-             Grid.Column="2"
+             Grid.Column="0"
              Text="Actualizar"
              Clicked="btnActualizarPro_Clicked"
              />
             <Button x:Name="btnEliminarPro"
-             BackgroundColor="Gray"
+             BackgroundColor="Red"
              TextColor="White"
              Grid.Row="0"
-             Grid.Column="3"
+             Grid.Column="1"
              Text="Eliminar"
              Clicked="btnEliminarPro_Clicked"
              />

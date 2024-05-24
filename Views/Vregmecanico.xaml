@@ -6,34 +6,28 @@
              Title="Registro Mecánico New">
     <VerticalStackLayout
         Padding="30"
-        Spacing="25">
+        Spacing="15">
         <Label 
-            Text="Administrador de Bodega"
+            Text="Mecánico"
             TextColor="White"
-            BackgroundColor="Gray"
             HorizontalOptions="Center" />
+        
         <Label
-         BackgroundColor="Gray"
-         TextColor="White"
-         Text="Codigo"/>
-        <Entry x:Name="txtCodigo"
-        TextColor="Black"
-        Placeholder="Automatico"
-       IsReadOnly="True"/>
-        <Label
-          BackgroundColor="Gray"
+          BackgroundColor="Black"
           TextColor="White"
           Text="Nombre del Usuario"/>
         <Entry x:Name="txtnombre_usuario"
         Placeholder="Nombre/Usuario"/>
+        
         <Label
-          BackgroundColor="Gray"
+          BackgroundColor="Black"
           TextColor="White"
           Text="Correo"/>
         <Entry x:Name="txtaEmail"
         Placeholder="Email"/>
+        
         <Label
-          BackgroundColor="Gray"
+          BackgroundColor="Black"
           TextColor="White"
           Text="Contraseña"/>
         <Entry x:Name="txtcontranewusuario"
@@ -41,18 +35,13 @@
         IsPassword="True"/>
         <Grid>
             <Grid.RowDefinitions>
-
-                <RowDefinition Height="2*"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="50"/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Button x:Name="btnAgregarUsuanew"
-             BackgroundColor="Gray"
+             BackgroundColor="Green"
              TextColor="White"
              Grid.Row="0"
              Grid.Column="1"

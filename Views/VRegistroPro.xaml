@@ -6,50 +6,42 @@
              BackgroundImageSource="celularfondo.png">
     <VerticalStackLayout
         Padding="30"
-        Spacing="25">
+        Spacing="10">
         <Label 
             Text="Administrador de Bodega"
             TextColor="White"
-            BackgroundColor="Gray"
             HorizontalOptions="Center" />
+        
         <Label
-         BackgroundColor="Gray"
-         TextColor="White"
-         Text="Codigo"/>
-        <Entry x:Name="txtCodigo"
-       IsReadOnly="True"/>
-        <Label
-          BackgroundColor="Gray"
+          BackgroundColor="Black"
           TextColor="White"
-          Text="Nombre del Producto"/>
+          Text="Nombre del Producto:"/>
         <Entry x:Name="txtnombre_producto"
-        Placeholder="Ingrese_Producto"/>
+        Placeholder="Ingrese Producto"/>
+        
         <Label
-          BackgroundColor="Gray"
+          BackgroundColor="Black"
           TextColor="White"
-          Text="Cantidad"/>
+          Text="Cantidad:"/>
         <Entry x:Name="txtacantidad"
-        Placeholder="Ingrese_cantidad"/>
+        Placeholder="Ingrese cantidad"/>
+        
         <Label
-          BackgroundColor="Gray"
+          BackgroundColor="Black"
           TextColor="White"
-          Text="Precio"/>
+          Text="Precio:"/>
         <Entry x:Name="txtprecio"
-        Placeholder="Ingrese_Precio"/>
+        Placeholder="Ingrese Precio"/>
+        
         <Grid>
             <Grid.RowDefinitions>
-
-                <RowDefinition Height="2*"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="50"/>
                 <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
+            </Grid.ColumnDefinitions>
             <Button x:Name="btnAgregarPro"
-             BackgroundColor="Gray"
+             BackgroundColor="Green"
              TextColor="White"
              Grid.Row="0"
              Grid.Column="1"
