@@ -30,12 +30,24 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <ImageButton Source="icorol.png"
-              WidthRequest="100"
-              HeightRequest="100"           
+
+
+            <ImageButton Source="icoadmin.png"
+             WidthRequest="100"
+             HeightRequest="100"
+            x:Name="BtnAdmin"
              Grid.Row="1"
-             Grid.Column="0">
-                
+             Grid.Column="0"
+             Clicked="BtnAdmin_Clicked">
+            </ImageButton>
+                       
+            <ImageButton Source="icoinvitado.png"
+             WidthRequest="100"
+             HeightRequest="100"
+            x:Name="BtnInvitado"
+             Grid.Row="3"
+             Grid.Column="0"
+             Clicked="BtnInvitado_Clicked">
             </ImageButton>
 
             <ImageButton Source="icotrabador.png"
@@ -45,25 +57,9 @@
              Grid.Row="2"
              Grid.Column="0"
              Clicked="BtnTrabajadores_Clicked">
-                
-             </ImageButton>
-            <ImageButton Source="icoinvitado.png"
-             WidthRequest="100"
-             HeightRequest="100"
-            x:Name="BtnInvitado"
-             Grid.Row="3"
-             Grid.Column="0"
-             Clicked="BtnInvitado_Clicked">
             </ImageButton>
-            
-            <ImageButton Source="icoadmin.png"
-             WidthRequest="100"
-             HeightRequest="100"
-            x:Name="BtnAdmin"
-             Grid.Row="4"
-             Grid.Column="0"
-             Clicked="BtnAdmin_Clicked"> 
-            </ImageButton>
+
+
             <ImageButton Source="icocamara.png"
              WidthRequest="100"
              HeightRequest="100"

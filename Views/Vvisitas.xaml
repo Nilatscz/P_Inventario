@@ -9,59 +9,55 @@
         <Grid
          RowSpacing="10">
             <Grid.RowDefinitions>
-
-                <RowDefinition Height="2*"/>
-                <RowDefinition Height="2*"/>
-                <RowDefinition Height="2*"/>
-                <RowDefinition Height="2*"/>
-                <RowDefinition Height="2*"/>
-                <RowDefinition Height="2*"/>
-                <RowDefinition Height="2*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
                 
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="100"/>
-                <ColumnDefinition Width="250"/>
-                <ColumnDefinition Width="100"/>
-             
-              
+                <ColumnDefinition Width="320"/>
+                
             </Grid.ColumnDefinitions>
             <Label Text="Misión"
                    FontSize="30"
                VerticalOptions="Center"
                TextColor="White"
-               
                Grid.Row="0"
-               Grid.Column="1"
+               Grid.Column="0"
                HorizontalOptions="Center"/>
             <Image Source="mision.png"
                  Grid.Row="1"
-                 Grid.Column="1"/>
+                 Grid.Column="0"/>
+            
             <Label Text="Visión"
                    FontSize="30"
                VerticalOptions="Center"
                TextColor="White"
-              
                Grid.Row="2"
-               Grid.Column="1"
+               Grid.Column="0"
                HorizontalOptions="Center"/>
             <Image Source="vision.png"
                  Grid.Row="3"
-                 Grid.Column="1"/>
+                 Grid.Column="0"/>
+            
             <Label Text="Créditos"
                    FontSize="30"
                VerticalOptions="Center"
                TextColor="White"
-              
                Grid.Row="4"
-               Grid.Column="1"
+               Grid.Column="0"
                HorizontalOptions="Center"/>
             <Image Source="usuariocrea.png"
                  Grid.Row="5"
-                 Grid.Column="1"/>
+                 Grid.Column="0"/>
+            
             <Button x:Name="btnvisita"
          Grid.Row="6"
-        Grid.Column="1"
+        Grid.Column="0"
         BorderColor="White"
         Text="Stock de Inventario"
         TextColor="White"
